@@ -53,6 +53,14 @@ main {
     background-color: #141922;
     width: calc(100%-250px);
     height: 100%;
+    overflow: scroll;
+}
+main h2 {
+    color: white;
+    padding: 1rem;
+}
+main p {
+    color: grey;
 }
 main .horizontal {
     display: flex;
@@ -74,6 +82,57 @@ main .horizontal {
     color: grey;
 }
 
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+}
+.song {
+    width: 15%;
+    padding: 1rem;
+}
+.cover {
+    width: 100%;
+}
+.cover img {
+    width: 100%;
+}
+.cover .overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 10;
+}
+.song h5 {
+    color: white;
+    padding: .6rem 0;
+}
+.song p {
+    font-size: 0.8rem;
+}
+
+.forYou-heading p, .popular-heading p {
+    padding-left: 1rem;
+}
+
+.forYou {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+}
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+    padding-bottom: 7rem;
+}
+.popular .song .cover img {
+    border-radius: 50%;
+}
 
 
 
