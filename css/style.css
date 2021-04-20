@@ -41,6 +41,49 @@ body {
     background-color: black;
     color: grey;
 }
+.menu .logo img {
+    padding: 1rem;
+    width: 70%;
+}
+.menu ul {
+    list-style: none;
+}
+.menu li {
+    width: 100%;
+    text-align: start;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.menu li img {
+    display: inline-block;
+    width: 10%;
+}
+.menu li h4 {
+    display: inline-block;
+    padding-left: .5rem;
+}
+.active {
+    border-left: 2px solid green;
+    color: white;
+}
+
+.playlists-container h2 {
+    padding: 1rem;
+    color: white;
+}
+.playlist {
+    margin-left: 1rem;
+    padding: .5rem 0;
+}
+.playlist:first-of-type {
+    display: flex;
+    align-items: center;
+}
+.playlist i {
+    font-size: 2rem;
+    padding-right: .5rem;
+}
 
 
 
