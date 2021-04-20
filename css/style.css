@@ -7,15 +7,27 @@
 body {
     background-color: grey;
     max-height: 100vh;
+    font-family: sans-serif;
 }
 
 .button-container {
     position: fixed;
     width: 100vw;
-    z-index: 0;
+    top: 0;
+    z-index: 3;
     display: inline-block;
     text-align: end;
     background-color: rgba(0, 0, 0, 0.7);
+}
+.button-container button {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
 }
 
 .menu {
@@ -27,18 +39,42 @@ body {
     width: 250px;
     height: 100vh;
     background-color: black;
-    color: lightgrey;
+    color: grey;
 }
 
 
 
 main {
     position: absolute;
-    z-index: 4;
-    background-color: orange;
-    width: 100%;
+    z-index: 2;
+    top:0;
+    left: 250px;
+    right: 0;
+    background-color: #141922;
+    width: calc(100%-250px);
     height: 100%;
 }
+main .horizontal {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.horizontal ul {
+    list-style: none;
+}
+.horizontal ul li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.horizontal ul li a {
+    width: 20%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: grey;
+}
+
+
 
 
 
