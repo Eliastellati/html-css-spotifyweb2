@@ -9,6 +9,9 @@ body {
     max-height: 100vh;
     font-family: sans-serif;
 }
+p {
+    font-size: 12px;
+}
 
 .button-container {
     position: fixed;
@@ -51,7 +54,7 @@ body {
 .menu li {
     width: 100%;
     text-align: start;
-    padding-left: 1rem;
+    padding: .5rem 1rem;
     display: flex;
     align-items: center;
 }
@@ -68,7 +71,11 @@ body {
     color: white;
 }
 
-.playlists-container h2 {
+.playlists-container {
+    height: 30vh;
+    overflow: auto;
+}
+.menu h2 {
     padding: 1rem;
     color: white;
 }
@@ -84,6 +91,34 @@ body {
     font-size: 2rem;
     padding-right: .5rem;
 }
+
+.profile {
+    margin-top: 5rem;
+}
+.profile .row-1, .profile .row-2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row-1 img {
+    height: 1rem;
+    margin: .7rem 1rem;
+}
+.row-1 hr {
+    width: 80%;
+    margin: 0 1rem;
+}
+.row-2 img {
+    height: 1.5rem;
+    margin: .7rem 1rem;
+    background-color: grey;
+    border-radius: 50%;
+}
+.row-2 h4 {
+    color: white;
+}
+
 
 
 
@@ -182,9 +217,82 @@ main .horizontal {
 
 footer {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 8;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: #282828;
 }
+
+.player-left {
+    width: 20%;
+    display: flex;
+    height: 100%;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+}
+.player-left img {
+    height: 100%;
+}
+.player-left h5 {
+    color: white;
+}
+
+.player-center {
+    width: 40%;
+}
+.player-center .controls {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.play-btn {
+    font-size: 1.5rem;
+}
+.lenght {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 0;
+    color: white;
+}
+.durata {
+    width: 80%;
+    height: .4rem;
+    border-radius: 5px;
+    background-color: grey;
+}
+.minuto {
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.player-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.volume {
+    width: 50%;
+    height: .4rem;
+    border-radius: 5px;
+    background-color: grey;
+}
+.level {
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+}
+
