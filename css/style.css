@@ -32,6 +32,11 @@ p {
     border-radius: 50px;
     text-transform: uppercase;
 }
+.button-container button:hover {
+    background-color: white;
+    color: black;
+}
+
 
 .menu {
     position: relative;
@@ -154,10 +159,14 @@ main .horizontal {
     padding: 0 1rem;
 }
 .horizontal ul li a {
+    font-size: .7rem;
     width: 20%;
     text-transform: uppercase;
     text-decoration: none;
     color: grey;
+}
+.horizontal ul li a:hover{
+    border-bottom: 2px solid green;
 }
 
 .recent {
@@ -167,8 +176,9 @@ main .horizontal {
     text-align: center;
 }
 .song {
-    width: 15%;
+    width: 200px;
     padding: 1rem;
+    flex-shrink: 0;
 }
 .cover {
     width: 100%;
@@ -251,10 +261,11 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: white;
 }
 .play-btn {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .lenght {
     display: flex;
